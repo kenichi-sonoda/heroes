@@ -1,2 +1,16 @@
-# heroes
-俺を助けてくれる素晴らしいツール・コードたち
+# HEROES
+日々、助けてもらってる素晴らしいツール・コードたち。
+本当にありがとう。
+
+- [javascript](/javascript/README.md)
+- [SQL](/sql/README.md)
+- [coding](/coding/README.md)
+  - 時間の比較
+- chrome拡張機能・アプリ
+  - [HTMLエラーチェッカー](https://chrome.google.com/webstore/detail/html%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC/ohdllebchmmponnofchalfkegpjojcaf?hl=ja)
+  - [Advanced REST client(ARC)](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
+    - API調査のおともに
+  - [JavaScript Errors Notifier
+](https://chrome.google.com/webstore/detail/javascript-errors-notifie/jafmfknfnkoekkdocjiaipcnmkklaajd)
+  - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+  - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
