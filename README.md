@@ -2,7 +2,7 @@
 日々、助けてもらってる素晴らしいツール・コードたち。
 本当にありがとう。
 
-- 開発
+- コード・言語
   - ruby/rails
   - c#/ASP.NET
   - [javascript](/coding/javascript/index.md)
@@ -17,7 +17,21 @@
   ](https://chrome.google.com/webstore/detail/javascript-errors-notifie/jafmfknfnkoekkdocjiaipcnmkklaajd)
     - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
     - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+- インフラ周り
+  - AWS
+    - S3
+    - EC2
+    - lambda
+    - cloudWatch
+  - Azure
+  - Docker
+    - イルカさん
+  - jenkins
+- 開発管理ツール
+  - git/github
 - コミュニケーション
   - slack
   - trello
   - 開発プロセス
+    - Be lazy!
+    - YAGNI
