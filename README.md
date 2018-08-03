@@ -31,6 +31,20 @@
   - git/github
 - コミュニケーション
   - slack
+    - Trelloアプリと
+      - slackのapps configureでtrello appのインストール
+      - 連携させたいチャンネルで以下を実行
+        - /invite @trello
+        - /trello link [ボードのURL]
+        - あとは /trello add とかでカード追加できるよ
+    - Trello Alertsと
+      - slackのappsでtrello alertsを検索
+      - ボード選択、チャンネル選択、通知アクションの選択
+    - githubと
+      - slackでgithub appを追加
+        - アプリがアクセスできるチャンネルを選択します (全てのパブリックチャンネル、特定のチャンネル、なし、等)。
+      - slackにアサインやレビューの通知をしたい
+        - webhookを解釈してbot作るマンする
   - trello
   - 開発プロセス
     - Be lazy!
