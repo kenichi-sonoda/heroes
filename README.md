@@ -36,6 +36,7 @@
       - 連携させたいチャンネルで以下を実行
         - /invite @trello
         - /trello link [ボードのURL]
+        - ブラウザで認証求められるので
         - あとは /trello add とかでカード追加できるよ
     - Trello Alertsと
       - slackのappsでtrello alertsを検索
