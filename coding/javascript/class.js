@@ -7,7 +7,7 @@ var AccountForms = function () {
     // $()で毎回命令を与えると都度オブジェクトを生成してしまうため変数に取っておく
     this.objectForJQuery = $("#idForJQuery");
     this.objectForJQuery.change(function () {
-        self.disableV2webIfEwsIsActive();
+        self.testFunction();
     });
 
     this.deleteButton = $('#userdelete');
@@ -22,6 +22,7 @@ var AccountForms = function () {
 AccountForms.prototype = {
   testFunction: function () {
     console.log("newしてもらってConstracter.testFunctionで呼び出せます");
+    // this.objectForJQuery.prop('disabled', true);とかできるよ
   },
   testFunction2: function () {
     console.log("newしてもらってConstracter.testFunction2で呼び出せます");
