@@ -1,14 +1,14 @@
-#Windows Server 2019ã®languagePackã‚’ã€ŒC:\lang.isoã€ã¨ã—ã¦ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
+#Windows Server 2019‚ÌlanguagePack‚ğuC:\lang.isov‚Æ‚µ‚Äƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·B
 Invoke-WebRequest -Uri https://software-download.microsoft.com/download/pr/17763.1.180914-1434.rs5_release_SERVERLANGPACKDVD_OEM_MULTI.iso -OutFile C:\lang.iso
 
-#ã€ŒC:\lang.isoã€ã‚’ãƒã‚¦ãƒ³ãƒˆã—ã¾ã™ã€‚
+#uC:\lang.isov‚ğƒ}ƒEƒ“ƒg‚µ‚Ü‚·B
 $mountResult = Mount-DiskImage C:\lang.iso -PassThru
 
-#ãƒã‚¦ãƒ³ãƒˆã—ãŸISOã®ãƒ‰ãƒ©ã‚¤ãƒ–ãƒ¬ã‚¿ãƒ¼ã‚’å–å¾—ã—ã¾ã™ã€‚
+#ƒ}ƒEƒ“ƒg‚µ‚½ISO‚Ìƒhƒ‰ƒCƒuƒŒƒ^[‚ğæ“¾‚µ‚Ü‚·B
 $driveLetter = ($mountResult | Get-Volume).DriveLetter
 
-#ãƒ‘ã‚¹ã‚’æ ¼ç´
+#ƒpƒX‚ğŠi”[
 $lppath = $driveLetter + ":\x64\langpacks\Microsoft-Windows-Server-Language-Pack_x64_ja-jp.cab"
 
-#ã€ŒLpksetup.exeã€ã‚³ãƒãƒ³ãƒ‰ã‚’ä½¿ã£ã¦æ—¥æœ¬èªlanguagePackã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œå†èµ·å‹•ã—ã¾ã™ã€‚
+#uLpksetup.exevƒRƒ}ƒ“ƒh‚ğg‚Á‚Ä“ú–{ŒêlanguagePack‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·BƒCƒ“ƒXƒg[ƒ‹ŒãÄ‹N“®‚µ‚Ü‚·B
 C:\windows\system32\Lpksetup.exe /i ja-JP /f /s /p $lppath

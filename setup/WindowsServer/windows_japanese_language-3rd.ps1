@@ -1,17 +1,17 @@
-#UIの言語を日本語で上書きします。
+#UI�̌������{��ŏ㏑�����܂��B
 Set-WinUILanguageOverride -Language ja-JP
 
-#時刻/日付の形式をWindowsの言語と同じにします。
+#����/���t�̌`����Windows�̌���Ɠ����ɂ��܂��B
 Set-WinCultureFromLanguageListOptOut -OptOut $False
 
-#ロケーションを日本にします。
+#���P�[�V��������{�ɂ��܂��B
 Set-WinHomeLocation -GeoId 0x7A
 
-#システムロケールを日本にします。
+#�V�X�e�����P�[������{�ɂ��܂��B
 Set-WinSystemLocale -SystemLocale ja-JP
 
-#タイムゾーンを東京にします。
+#�^�C���]�[���𓌋��ɂ��܂��B
 Set-TimeZone -Id "Tokyo Standard Time"
 
-#サーバーを再起動します。
+#�T�[�o�[���ċN�����܂��B
 Restart-Computer

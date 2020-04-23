@@ -1,11 +1,11 @@
-#ユーザーが使用する言語を日本語にします。
+#���[�U�[���g�p���錾�����{��ɂ��܂��B
 Set-WinUserLanguageList -LanguageList ja-JP,en-US -Force
 
-#入力する言語を日本語で上書きします。
+#���͂��錾�����{��ŏ㏑�����܂��B
 Set-WinDefaultInputMethodOverride -InputTip "0411:00000411"
 
-#MS-IMEの入力方式を設定します。
+#MS-IME�̓��͕�����ݒ肵�܂��B
 Set-WinLanguageBarOption -UseLegacySwitchMode -UseLegacyLanguageBar
 
-#サーバーを再起動します。
+#�T�[�o�[���ċN�����܂��B
 Restart-Computer
