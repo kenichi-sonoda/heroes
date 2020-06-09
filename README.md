@@ -3,20 +3,18 @@
 本当にありがとう。
 
 - コード・言語
-  - ruby/rails
-  - c#/ASP.NET
+  - Ruby
+    - Rails
+  - C#
+    - ASP.NET
+    - ASP.NET Core
   - [javascript](/coding/javascript/index.md)
+    - jQuery
+    - Vue.js
+      - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+    - Vue cli
   - [SQL](/coding/sql/index.md)
   - coding
-    - [時間の比較](/coding/compare_time.js)
-  - chrome拡張機能・アプリ
-    - [HTMLエラーチェッカー](https://chrome.google.com/webstore/detail/html%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC/ohdllebchmmponnofchalfkegpjojcaf?hl=ja)
-    - [Advanced REST client(ARC)](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
-      - API調査のおともに
-    - [JavaScript Errors Notifier
-  ](https://chrome.google.com/webstore/detail/javascript-errors-notifie/jafmfknfnkoekkdocjiaipcnmkklaajd)
-    - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
-    - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - インフラ周り
   - AWS
     - S3
@@ -25,28 +23,16 @@
     - cloudWatch
   - Azure
   - Docker
-    - イルカさん
-  - jenkins
+  - CI
+    - jenkins
+    - CircleCI
 - 開発管理ツール
-  - git/github
+  - Git
+  - GitHub
 - コミュニケーション
   - slack
-    - Trelloアプリと
-      - slackのapps configureでtrello appのインストール
-      - 連携させたいチャンネルで以下を実行
-        - /invite @trello
-        - /trello link [ボードのURL]
-        - ブラウザで認証求められるので
-        - あとは /trello add とかでカード追加できるよ
-    - Trello Alertsと
-      - slackのappsでtrello alertsを検索
-      - ボード選択、チャンネル選択、通知アクションの選択
-    - githubと
-      - slackでgithub appを追加
-        - アプリがアクセスできるチャンネルを選択します (全てのパブリックチャンネル、特定のチャンネル、なし、等)。
-      - slackにアサインやレビューの通知をしたい
-        - webhookを解釈してbot作るマンする
   - trello
-  - 開発プロセス
-    - Be lazy!
-    - YAGNI
+  - miro
+- 開発プロセス
+  - Be lazy!
+  - YAGNI
