@@ -1,5 +1,9 @@
 # rails_docker
 
+- Ruby: 2.7.1
+- Rails: 6.0.3
+- Bundler: 2.1.4
+
 ## Dockerコマンド
 
 1. イメージの作成 ( Dockerfile を元にイメージを作成 )
