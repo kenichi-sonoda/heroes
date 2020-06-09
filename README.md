@@ -19,8 +19,10 @@
   - AWS
     - S3
     - EC2
-    - lambda
-    - cloudWatch
+    - Lambda
+    - CloudWatch
+    - AMI
+    - CodeDeploy
   - Azure
   - Docker
   - CI
