@@ -1,0 +1,36 @@
+# 記述形式のバージョン
+version: '3.7'
+# コンテナの設定
+services:
+  rails_web:
+    build: . # build: context: . の省略形
+    volumes:
+      - .:/home/
+    ports:
+      - "3000:3000" # port forwarding `local port:container port`
+    tty: true
+    # command: rails s -p 3000 -b '0.0.0.0'
+  rails_db:
+    image: "postgres:12.3" # https://hub.docker.com/_/postgres
+    restart: always # 不明
+    environment:
+      POSTGRES_USER: postgres # デフォルトで宣言されてるので必要はないけどわかりやすくするため
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    tty: true
+  # PostgreSQL DB構築に当たって
+  # - pattern 1 こちらを採用
+  #   - postgreSQLのDockerを利用する
+  #     - DockerHubから持ってくる
+  #     - かつサービス用のコンテナを分ける
+  #       - コンテナ間通信を行う
+  #       - Container本来の利用方法に近い
+  #     - 懸念点特になし
+  #       - DockerComposeUpを使うとサービスが同時に立ち上がる
+  #       - Rails側のサービスでRails sを指定してサービスとして運用しようとした場合、
+  #         PostgreSQLの起動を待つという処理が必要
+  # - pattern 2
+  #   - rails_webにpostgreSQLを入れる
+  #     - サービスは分けずにDockerfile内にPostgreSQLを入れる形
+  #     - Deployを考慮しない、開発用環境として割り切る
